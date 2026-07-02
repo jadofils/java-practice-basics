@@ -82,3 +82,13 @@ Use LinkedList when frequent insertions/deletions are needed.
 Use Stack when you need LIFO behavior.
 
 Use Vector only if you need thread-safe legacy code.
+
+
+Collection	Access Speed	Notes
+ArrayList	O(1) random access	Best for fast index-based access.
+LinkedList	O(n) random access, O(1) sequential	Best for sequential traversal, not random access.
+HashSet	O(1) average for contains()	Best for checking existence quickly.
+TreeSet	O(log n)	Best for sorted lookups.
+HashMap	O(1) average for get(key)	Best for key-based lookup.
+TreeMap	O(log n)	Best for sorted key lookups.
+Vector	O(1) random access	Same as ArrayList, but synchronized.
